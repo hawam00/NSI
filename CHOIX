@@ -1,0 +1,151 @@
+answer = input ("Est tu pret a jouer? (oui/non) ")
+
+if answer.lower().strip() == "oui":
+    answer = input("A la fin des cours , l'une de vos amies Isis vous invite et 2 autres amis pour une soiree pyjama le soir parce que ses parents ne sont pas la . Est-ce que tu acceptes ? (oui/non) ").lower().strip()
+    if answer == "oui":
+        answer = input("A la fin des cours Isis, Hawa, Nassim et toi, etes chez elle. Pendant une bonne heure, vous jouez a des jeux video.Hawa qui s'ennuie vous parle d'une maison abandonnee et hantee qui n'est pas loin de chez elle. Nassim et Isis sont partants pour y aller. Hawa te demande si tu veux bien y aller avec eux ? Est-ce que tu acceptes ? (oui/non)")
+
+
+        if answer =="non":
+            print("Ils partent sans toi, mais t'es autophobe, la phobie de te retrouver seul. Tu meurs sur place suite à une crise.")
+        else:
+            print(" L'histoire continue")
+
+
+            answer = input("Vous êtes arrivé dans la maison et vous vous retrouvez face a 2 portes. Tes amis te laissent passer en premier et choisir la porte. Laquelle tu prends ?(1/2)")
+            
+
+            if answer == "1":
+               print(" Mauvaise porte ! Il fait tout noir, tu tombes et te tu te blesse (game over)")
+            else:
+               print("Bon choix ! Il y a une lampe torche, tu n'es pas dans le noir.")
+               
+
+               answer = input("Après avoir trouvé la lampe torche, Nassim te défie d'invoquer les esprits.Qu’est ce que tu fais ? (accepter/refuser)")
+               
+
+               if answer =="accepter":
+                   print("Tu as réussi à invoquer les esprits, vous voila tous possédez, vous mourrez.")
+               else:
+                   print("Il se moque de toi mais vous continuez l'aventure.")
+                   
+
+                   answer = input("Hawa vous prévient et vous dit qu'elle entend du bruit dans la pièce d'à côté. Qu'est ce que tu fais ? (aller voir/se cacher)")
+ 
+
+                   if answer =="aller voir":
+                       print(" Mauvais choix, c'était un tueur en série, il te coupe la tête, tu meurs.")
+                   else:
+                       print("Bien joué, vous êtes loin du danger.")
+
+
+                       answer = input("Quelques minutes après, tu commences à avoir faim et tu finis par trouver un biscuit dans la maison. Qu'est ce que tu fais ? (manger/reposer)")
+
+
+                       if answer =="manger":
+                           print("Tu vomis sur Isis, elle te gifle et tu glisse par la fenêtre.")
+                       else:
+                           print("Tu as éviter de t'intoxiquer, très bon choix.")
+                       
+
+                       answer = input("Tu te retournes et remarque qu'Hawa a disparu, vous n'êtes plus que 3. Isis te prévient qu'elle ne sortira pas sans son amie. Vous vous mettez donc à la chercher. Vous remarquez des traces de pas et vous décidez de les suivre, elles vous mènent dans une forêt. Vous la cherchez en hurlant son prénom.Sans le vouloir, vous avez attiré une louve qui s'appelle Hawa. Qu'est ce que vous faites ? (apprivoiser/fuir)")
+
+
+                       if answer =="fuir":
+                           print("Elle vous rattrape et vous mange, vous mourrez.")
+                       else:
+                           print("Elle vous aime, elle va vous aider à trouver la vraie Hawa.")
+
+
+                           answer = input("La louve vous aide à la repérer, mais elle n’est pas très futée, elle repère plutôt un inconnu. L'inconnu se présente et vous dit qu'il s'appelle Mr. Gibaud et c'est un expert en forêt. Vous lui demander de l'aide pour retrouver Hawa mais il n'accepte que si tu arrives à répondre correctement à la question suivante:")
+                           print("D’après cette formule, quel est le poids idéal d’un homme mesurant 170 cm ?(La formule de Lorentz est une formule donnant le poids idéal (théorique) en kg noté p(t) d'un homme de taille t (en cm) avec t⩾130. Elle est donnée par p(t)=t−100−((t−150)/4)). (-62.5/65)")
+                           
+
+                           if answer =="-62.5":
+                               print(" T’es tellement nul que Mr. Gibaud s’est enfui en courant.")
+                           else:
+                               print("Mr. Gibaud te félicite et accepte de vous aider !")
+
+
+                               answer = input("Vous vous baladez maintenant dans la forêt avec Mr.Gibaud, et il vous demande de lui faire confiance et de le suivre. Vous le suivez mais bizarrement, vous vous éloignez peu à peu de la forêt et tu commences à douter de Mr. Gibaud. Qu'est ce que tu fais ? (se taire/parler)")
+
+
+                               if answer =="parler":
+                                   print("Tu en parles à Nassim et Isis: ils pensent que tu ne veux pas retrouver Hawa, alors ils t'abandonnent et ne sont plus tes amis.")
+                               else:
+                                   print("Tu ne dis rien: Tu continues de le suivre.")
+
+
+                                   answer = input("près quelques minutes de marche vous arrivez devant une tour, Mr. Gibaud vous dit que Hawa est en haut de la tour, ils vous dit d'y aller avec la louve.Vous montez mais vous tombez nez à nez avec la famille de la louve, qui est en colère contre toi et tes amis. Vous êtes tétanisé, devant la famille de cet animal, vous voyez votre vie défiler devant vos yeux. D'un coup, Hawa sort et vous retrouve, elle vous dit de ne pas avoir peur, c'est une meute de loups qu'elle a apprivoiserTout content, mais en colère aussi, parce que Hawa est partie sans prévenir, comment tu réagis ? (se facher/s'expliquer)")
+                                   
+
+                                   if answer =="se facher":
+                                       print("Tu te fâches contre elle: Elle s'énerve aussi et demande à la meute de loup de te tuer.")
+                                   else:
+                                       print("Tu lui demandes des explications: Elle s'excuse et t'avoue tout")
+
+
+                                       answer = input("Elle t'explique qu'elle a toujours voulu connaître le milieu de vie des loups et de voir comment ils vivent. Elle finit par te demander si elle peut en adopter la moitié et toi aussi. Qu'est ce que tu décides ? (accepter/refuser)")
+                                       
+
+                                       if answer =="refuser":
+                                           print("Elle se met en colère et t’accuse de ne pas vouloir son bonheur, ce qui entraîne aussi la colère de Nassim et Isis, ils partent sans toi.")
+                                       else:
+                                           print("Tu acceptes: Te voilà le maître d'une meute de loups.")
+
+
+                                           answer = input("Vous descendez tous de la tour et la nuit est déjà tombée. Vous retrouvez Mr. Gibaud. Soudain les loups commencent à avoir peur et partent tous en courant. Toi et tes amis trouvez ça bizarre…Qu’est ce que vous faites ? (fuir/rester)")
+
+
+                                           if answer =="fuir":
+                                               print("Vous vous enfuyez et suivez les loups: Vous vous perdez et Hawa pleure parce qu’elle a perdu sa meute de loups. Elle pleure tellement qu’elle fait un AVC.")
+                                           else:
+                                               print("Vous restez avec Mr. Gibaud pour qu’il vous raccompagne à la maison: Mr. Gibaud vous demande de le suivre en silence.")
+                                               
+
+                                               answer = input("Isis commence a avoir peur de Mr. Gibaud… elle trouve un tronc d'arbre et veut donner un coup à Mr. Gibaud mais elle a besoin de ton aide..Qu’est ce que tu fais ? (accepter/refuser)")
+
+
+                                               if answer =="accepter":
+                                                   print("Tu l’aides: Le coup de tronc ne fait aucun mal à Mr. Gibaud, alors il le récupère et vous frappe avec.")
+                                               else:
+                                                   print("Tu la laisse le faire seul: Elle échoue, Mr. Gibaud pousse Isis du haut d’une falaise et tombe dans une rivière.")
+
+
+                                                   answer = input("Te voilà seul avec Nassim, Hawa et l’expert en forêt. Sur la route, tu trouves une lampe magique, Nassim te dit de la frotter. Un génie sort de la lampe et te demande de faire trois vœux.Quel est ton premier vœu ? (isis revienne/connaitre la verite sur mr gibaud)")
+                                                   
+
+                                                   if answer =="isis revienne":
+                                                       print(" Isis est bien revenu, mais avec des requins, ils vous mangent sur place.")
+                                                   else:
+                                                       print("Le génie te dis la vérité sur Mr. Gibaud…")
+
+
+                                                       answer = input("Tu apprends que Mr. Gibaud est chercheur de personnes qui calculent mieux qu’une calculatrice afin de révolutionner le monde et que les gens vivent pour les maths. Toi et tes amis êtes sur la liste.Hawa commence à avoir peur, mais elle te dit de faire un nouveau vœu pour vous sortir de là.Quel est ton deuxième vœu ? (realiser le reve de monsieur gibaud /monsieur gibaud ne soit pas diabolique)")
+                                                       
+
+                                                       if answer =="realiser le reve de monsieur gibaud":
+                                                           print(" Toi et tes amis allez vivre pour les maths,au point que ça va vous tuer. ")
+                                                       else:
+                                                           print("Mr. Gibaud s’est remis en question après que le génie ait exaucé ton vœu. Il a réalisé que son plan était démoniaque et s’est excusé auprès de tes amis et toi, mais ne regrette pas d’avoir poussé Isis dans la rivière…")
+
+
+                                                           answer = input("Il propose de vous raccompagner pour se faire pardonner. Mais soudain, Nassim te rappelle que tu as un 3eme vœu à faire.Quel est ton troisième vœu ? (retourner dans le passé/rester avec mr gibaud)")
+                                                           
+
+                                                           if answer =="rester avec mr gibaud":
+                                                               print("Il a oublié le chemin, il est donc perdu aussi.")
+                                                           else:
+                                                               print("Vous ouvrez les yeux, et vous retrouvez chez Isis, avec la manette de jeu dans vos mains.Surpris par ce que vous venez de vivre, vous vous promettez de ne jamais raconter ça à personne d’autres et de garder cette aventure pour vous.")
+                                                               print("Merci d'avoir jouer !")
+   
+   
+    elif answer =="non":
+        print("Isis est très vexée, elle décide de ne  plus être ton amie et comme son père est directeur tu te fait virer. (game over)")
+
+
+    else:
+        print("Choix Invalide , recommence")
+else:
+   print("c'est dommage!")
+     
